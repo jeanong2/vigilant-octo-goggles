@@ -1,0 +1,686 @@
+================= TRAINING FOR co NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 0.0037, RMSE: 0.0610, MAE: 0.0486, R2: 0.4271
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.003037
+1        RoadCategory_C     0.003264
+2   RoadCategory_Counts    -0.000931
+3        RoadCategory_D     0.002196
+4        RoadCategory_E     0.002499
+5        RoadCategory_F     0.002510
+6                 buses    -0.072643
+7                  cars     0.070442
+8           motorcycles    -0.047611
+9                others    -0.067636
+10          region_east     0.015923
+11         region_north     0.047498
+12         region_south     0.015769
+13          region_west     0.028276
+14                 year    -0.041426
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 0.0037, RMSE: 0.0610, MAE: 0.0486, R2: 0.4266
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.003029
+1        RoadCategory_C     0.003256
+2   RoadCategory_Counts    -0.000920
+3        RoadCategory_D     0.002189
+4        RoadCategory_E     0.002511
+5        RoadCategory_F     0.002499
+6                 buses    -0.071667
+7                  cars     0.066998
+8           motorcycles    -0.047064
+9                others    -0.066501
+10          region_east     0.015884
+11         region_north     0.047461
+12         region_south     0.015750
+13          region_west     0.028238
+14                 year    -0.038683
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 0.0050, RMSE: 0.0706, MAE: 0.0600, R2: 0.2319
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.000000
+1        RoadCategory_C    -0.000000
+2   RoadCategory_Counts    -0.000000
+3        RoadCategory_D     0.000000
+4        RoadCategory_E     0.000000
+5        RoadCategory_F    -0.000000
+6                 buses     0.000000
+7                  cars    -0.000000
+8           motorcycles    -0.001601
+9                others    -0.001887
+10          region_east    -0.000000
+11         region_north     0.021668
+12         region_south     0.000000
+13          region_west     0.004010
+14                 year    -0.000000
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.1}
+ElasticNet Regression ==> MSE: 0.0039, RMSE: 0.0624, MAE: 0.0493, R2: 0.4001
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.000000
+1        RoadCategory_C     0.000000
+2   RoadCategory_Counts    -0.000000
+3        RoadCategory_D     0.000000
+4        RoadCategory_E     0.000320
+5        RoadCategory_F    -0.000000
+6                 buses    -0.028377
+7                  cars     0.000000
+8           motorcycles    -0.025098
+9                others    -0.019826
+10          region_east     0.011072
+11         region_north     0.042294
+12         region_south     0.011541
+13          region_west     0.023238
+14                 year     0.000000
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 0.0037    , RMSE: 0.0610    , MAE: 0.0486    , R2: 0.4271    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 0.0037    , RMSE: 0.0610    , MAE: 0.0486    , R2: 0.4266    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 0.0050    , RMSE: 0.0706    , MAE: 0.0600    , R2: 0.2319    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.1}       ==> MSE: 0.0039    , RMSE: 0.0624    , MAE: 0.0493    , R2: 0.4001    
+================= TRAINING FOR no2 NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 8.9227, RMSE: 2.9871, MAE: 2.2792, R2: 0.3978
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.071407
+1        RoadCategory_C     0.043454
+2   RoadCategory_Counts     0.011960
+3        RoadCategory_D     0.106046
+4        RoadCategory_E     0.004707
+5        RoadCategory_F     0.170456
+6                 buses    -1.145734
+7                  cars     5.783389
+8           motorcycles    -0.943711
+9                others     1.232577
+10          region_east    -1.041539
+11         region_north    -0.724719
+12         region_south    -2.058943
+13          region_west    -1.491721
+14                 year    -8.197541
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 8.9293, RMSE: 2.9882, MAE: 2.2809, R2: 0.3973
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.071081
+1        RoadCategory_C     0.043350
+2   RoadCategory_Counts     0.012580
+3        RoadCategory_D     0.105297
+4        RoadCategory_E     0.005671
+5        RoadCategory_F     0.169951
+6                 buses    -1.090153
+7                  cars     5.479847
+8           motorcycles    -0.908102
+9                others     1.299041
+10          region_east    -1.042184
+11         region_north    -0.724613
+12         region_south    -2.058129
+13          region_west    -1.492129
+14                 year    -7.935359
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 8.9872, RMSE: 2.9979, MAE: 2.2940, R2: 0.3934
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.016828
+1        RoadCategory_C     0.000000
+2   RoadCategory_Counts     0.022297
+3        RoadCategory_D     0.063169
+4        RoadCategory_E    -0.009709
+5        RoadCategory_F     0.114390
+6                 buses    -0.663748
+7                  cars     3.510261
+8           motorcycles    -0.622337
+9                others     1.750191
+10          region_east    -1.014984
+11         region_north    -0.694065
+12         region_south    -2.021001
+13          region_west    -1.465331
+14                 year    -6.241354
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 9.0305, RMSE: 3.0051, MAE: 2.2976, R2: 0.3905
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.018685
+1        RoadCategory_C     0.000000
+2   RoadCategory_Counts     0.022708
+3        RoadCategory_D     0.063073
+4        RoadCategory_E    -0.007679
+5        RoadCategory_F     0.115917
+6                 buses    -0.565933
+7                  cars     2.865887
+8           motorcycles    -0.556372
+9                others     1.870869
+10          region_east    -1.017628
+11         region_north    -0.695260
+12         region_south    -2.020645
+13          region_west    -1.467455
+14                 year    -5.671927
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 8.9227    , RMSE: 2.9871    , MAE: 2.2792    , R2: 0.3978    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 8.9293    , RMSE: 2.9882    , MAE: 2.2809    , R2: 0.3973    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 8.9872    , RMSE: 2.9979    , MAE: 2.2940    , R2: 0.3934    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 9.0305    , RMSE: 3.0051    , MAE: 2.2976    , R2: 0.3905    
+================= TRAINING FOR o3 NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 9.7022, RMSE: 3.1148, MAE: 2.6417, R2: 0.4477
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.053583
+1        RoadCategory_C    -0.137659
+2   RoadCategory_Counts    -0.014712
+3        RoadCategory_D     0.068255
+4        RoadCategory_E    -0.092406
+5        RoadCategory_F    -0.065779
+6                 buses    -3.316932
+7                  cars     4.605323
+8           motorcycles    -2.267520
+9                others    -3.270304
+10          region_east    -1.705625
+11         region_north     0.002031
+12         region_south    -2.414719
+13          region_west    -2.177021
+14                 year    -3.717014
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 9.7025, RMSE: 3.1149, MAE: 2.6430, R2: 0.4477
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.053409
+1        RoadCategory_C    -0.137650
+2   RoadCategory_Counts    -0.014048
+3        RoadCategory_D     0.068041
+4        RoadCategory_E    -0.091503
+5        RoadCategory_F    -0.066081
+6                 buses    -3.259180
+7                  cars     4.377596
+8           motorcycles    -2.234334
+9                others    -3.202216
+10          region_east    -1.705548
+11         region_north     0.002453
+12         region_south    -2.413259
+13          region_west    -2.176605
+14                 year    -3.531555
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 9.7398, RMSE: 3.1209, MAE: 2.6538, R2: 0.4455
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.053930
+1        RoadCategory_C    -0.116535
+2   RoadCategory_Counts    -0.000000
+3        RoadCategory_D     0.069045
+4        RoadCategory_E    -0.059904
+5        RoadCategory_F    -0.051917
+6                 buses    -2.543077
+7                  cars     1.710303
+8           motorcycles    -1.819454
+9                others    -2.373964
+10          region_east    -1.699024
+11         region_north     0.000507
+12         region_south    -2.389813
+13          region_west    -2.164544
+14                 year    -1.376216
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 9.7545, RMSE: 3.1232, MAE: 2.6548, R2: 0.4447
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.053483
+1        RoadCategory_C    -0.118501
+2   RoadCategory_Counts    -0.000000
+3        RoadCategory_D     0.068965
+4        RoadCategory_E    -0.061240
+5        RoadCategory_F    -0.053917
+6                 buses    -2.479502
+7                  cars     1.536370
+8           motorcycles    -1.785689
+9                others    -2.301626
+10          region_east    -1.695959
+11         region_north     0.004313
+12         region_south    -2.385012
+13          region_west    -2.160921
+14                 year    -1.246619
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 9.7022    , RMSE: 3.1148    , MAE: 2.6417    , R2: 0.4477    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 9.7025    , RMSE: 3.1149    , MAE: 2.6430    , R2: 0.4477    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 9.7398    , RMSE: 3.1209    , MAE: 2.6538    , R2: 0.4455    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 9.7545    , RMSE: 3.1232    , MAE: 2.6548    , R2: 0.4447    
+================= TRAINING FOR pm10 NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 4.9756, RMSE: 2.2306, MAE: 1.9387, R2: 0.5215
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B    -0.023973
+1        RoadCategory_C    -0.034085
+2   RoadCategory_Counts     0.097849
+3        RoadCategory_D    -0.086554
+4        RoadCategory_E    -0.024357
+5        RoadCategory_F    -0.105379
+6                 buses     1.951492
+7                  cars     4.319742
+8           motorcycles    -1.306690
+9                others     2.214783
+10          region_east     0.062720
+11         region_north     0.155936
+12         region_south     0.709141
+13          region_west    -0.413442
+14                 year    -6.160773
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 4.9766, RMSE: 2.2308, MAE: 1.9402, R2: 0.5214
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B    -0.023853
+1        RoadCategory_C    -0.033966
+2   RoadCategory_Counts     0.098031
+3        RoadCategory_D    -0.087047
+4        RoadCategory_E    -0.023576
+5        RoadCategory_F    -0.105364
+6                 buses     1.981652
+7                  cars     4.112077
+8           motorcycles    -1.285314
+9                others     2.251794
+10          region_east     0.061459
+11         region_north     0.155164
+12         region_south     0.708509
+13          region_west    -0.414556
+14                 year    -5.976434
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 4.9878, RMSE: 2.2333, MAE: 1.9464, R2: 0.5203
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.008411
+1        RoadCategory_C    -0.001404
+2   RoadCategory_Counts     0.079331
+3        RoadCategory_D    -0.066231
+4        RoadCategory_E     0.000000
+5        RoadCategory_F    -0.060484
+6                 buses     2.137605
+7                  cars     2.528128
+8           motorcycles    -1.134939
+9                others     2.436315
+10          region_east     0.029345
+11         region_north     0.125004
+12         region_south     0.681047
+13          region_west    -0.429039
+14                 year    -4.514375
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 5.0062, RMSE: 2.2374, MAE: 1.9500, R2: 0.5185
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.005838
+1        RoadCategory_C    -0.003968
+2   RoadCategory_Counts     0.081390
+3        RoadCategory_D    -0.069680
+4        RoadCategory_E     0.000000
+5        RoadCategory_F    -0.064520
+6                 buses     2.178044
+7                  cars     2.148222
+8           motorcycles    -1.101961
+9                others     2.487132
+10          region_east     0.029143
+11         region_north     0.125712
+12         region_south     0.681396
+13          region_west    -0.430584
+14                 year    -4.166252
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 4.9756    , RMSE: 2.2306    , MAE: 1.9387    , R2: 0.5215    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 4.9766    , RMSE: 2.2308    , MAE: 1.9402    , R2: 0.5214    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 4.9878    , RMSE: 2.2333    , MAE: 1.9464    , R2: 0.5203    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 5.0062    , RMSE: 2.2374    , MAE: 1.9500    , R2: 0.5185    
+================= TRAINING FOR pm25 NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 1.6740, RMSE: 1.2938, MAE: 1.0398, R2: 0.7374
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.006351
+1        RoadCategory_C     0.058923
+2   RoadCategory_Counts     0.000461
+3        RoadCategory_D    -0.029202
+4        RoadCategory_E    -0.021670
+5        RoadCategory_F    -0.033476
+6                 buses    -0.475404
+7                  cars     3.530772
+8           motorcycles    -1.516520
+9                others     0.488437
+10          region_east     0.023634
+11         region_north    -0.077324
+12         region_south    -0.062702
+13          region_west    -0.783665
+14                 year    -5.365187
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 1.6767, RMSE: 1.2949, MAE: 1.0436, R2: 0.7370
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.006288
+1        RoadCategory_C     0.058913
+2   RoadCategory_Counts     0.000813
+3        RoadCategory_D    -0.029605
+4        RoadCategory_E    -0.020946
+5        RoadCategory_F    -0.033656
+6                 buses    -0.438753
+7                  cars     3.334858
+8           motorcycles    -1.492926
+9                others     0.531891
+10          region_east     0.022688
+11         region_north    -0.077768
+12         region_south    -0.062799
+13          region_west    -0.784374
+14                 year    -5.196253
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 1.7358, RMSE: 1.3175, MAE: 1.0753, R2: 0.7277
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.009130
+1        RoadCategory_C     0.057985
+2   RoadCategory_Counts     0.000000
+3        RoadCategory_D    -0.018926
+4        RoadCategory_E    -0.000000
+5        RoadCategory_F    -0.017386
+6                 buses    -0.000000
+7                  cars     1.268210
+8           motorcycles    -1.198134
+9                others     0.998225
+10          region_east     0.019062
+11         region_north    -0.061756
+12         region_south    -0.041180
+13          region_west    -0.771305
+14                 year    -3.416858
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 1.7467, RMSE: 1.3216, MAE: 1.0810, R2: 0.7260
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.009626
+1        RoadCategory_C     0.058729
+2   RoadCategory_Counts     0.000000
+3        RoadCategory_D    -0.020760
+4        RoadCategory_E    -0.000000
+5        RoadCategory_F    -0.018407
+6                 buses    -0.000000
+7                  cars     1.095262
+8           motorcycles    -1.191832
+9                others     1.005663
+10          region_east     0.017896
+11         region_north    -0.064004
+12         region_south    -0.043664
+13          region_west    -0.773399
+14                 year    -3.249083
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 1.6740    , RMSE: 1.2938    , MAE: 1.0398    , R2: 0.7374    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 1.6767    , RMSE: 1.2949    , MAE: 1.0436    , R2: 0.7370    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 1.7358    , RMSE: 1.3175    , MAE: 1.0753    , R2: 0.7277    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 1.7467    , RMSE: 1.3216    , MAE: 1.0810    , R2: 0.7260    
+================= TRAINING FOR psi NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 6.9820, RMSE: 2.6423, MAE: 2.0317, R2: 0.7889
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.104094
+1        RoadCategory_C     0.210571
+2   RoadCategory_Counts    -0.010983
+3        RoadCategory_D    -0.002154
+4        RoadCategory_E     0.029934
+5        RoadCategory_F     0.027089
+6                 buses    -0.101942
+7                  cars     6.248712
+8           motorcycles    -2.498860
+9                others     1.288296
+10          region_east     0.157931
+11         region_north    -0.212673
+12         region_south    -0.173508
+13          region_west    -2.033804
+14                 year   -10.614815
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 6.9909, RMSE: 2.6440, MAE: 2.0410, R2: 0.7886
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.103818
+1        RoadCategory_C     0.210455
+2   RoadCategory_Counts    -0.010316
+3        RoadCategory_D    -0.003038
+4        RoadCategory_E     0.031148
+5        RoadCategory_F     0.026611
+6                 buses    -0.037346
+7                  cars     5.886412
+8           motorcycles    -2.456609
+9                others     1.365307
+10          region_east     0.156263
+11         region_north    -0.213388
+12         region_south    -0.173640
+13          region_west    -2.034936
+14                 year   -10.300329
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 7.0316, RMSE: 2.6517, MAE: 2.0779, R2: 0.7874
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.067099
+1        RoadCategory_C     0.183045
+2   RoadCategory_Counts     0.000000
+3        RoadCategory_D    -0.016611
+4        RoadCategory_E     0.008195
+5        RoadCategory_F    -0.000000
+6                 buses     0.088207
+7                  cars     4.458828
+8           motorcycles    -2.328616
+9                others     1.516790
+10          region_east     0.158475
+11         region_north    -0.194190
+12         region_south    -0.153968
+13          region_west    -2.019154
+14                 year    -8.974831
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 7.0969, RMSE: 2.6640, MAE: 2.1058, R2: 0.7854
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.069361
+1        RoadCategory_C     0.184457
+2   RoadCategory_Counts     0.000000
+3        RoadCategory_D    -0.019126
+4        RoadCategory_E     0.013424
+5        RoadCategory_F    -0.000000
+6                 buses     0.270104
+7                  cars     3.446731
+8           motorcycles    -2.209297
+9                others     1.730578
+10          region_east     0.153403
+11         region_north    -0.198046
+12         region_south    -0.156064
+13          region_west    -2.023504
+14                 year    -8.093798
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 6.9820    , RMSE: 2.6423    , MAE: 2.0317    , R2: 0.7889    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 6.9909    , RMSE: 2.6440    , MAE: 2.0410    , R2: 0.7886    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 7.0316    , RMSE: 2.6517    , MAE: 2.0779    , R2: 0.7874    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 7.0969    , RMSE: 2.6640    , MAE: 2.1058    , R2: 0.7854    
+================= TRAINING FOR so2 NOW =================
+Training Linear Regression with {}
+Fitting 5 folds for each of 1 candidates, totalling 5 fits
+Linear Regression ==> Best Params: {}
+Linear Regression ==> MSE: 3.1076, RMSE: 1.7628, MAE: 1.3343, R2: 0.8566
+
+Linear Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.067233
+1        RoadCategory_C     0.112267
+2   RoadCategory_Counts    -0.001740
+3        RoadCategory_D     0.017359
+4        RoadCategory_E     0.064664
+5        RoadCategory_F     0.060898
+6                 buses    -2.698073
+7                  cars     3.213973
+8           motorcycles    -1.491563
+9                others    -1.066539
+10          region_east     0.156185
+11         region_north    -0.170972
+12         region_south     1.092510
+13          region_west     2.393664
+14                 year    -6.217571
+
+Training Ridge Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Ridge Regression ==> Best Params: {'alpha': 0.1}
+Ridge Regression ==> MSE: 3.1083, RMSE: 1.7630, MAE: 1.3360, R2: 0.8566
+
+Ridge Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.067012
+1        RoadCategory_C     0.112015
+2   RoadCategory_Counts    -0.001252
+3        RoadCategory_D     0.016848
+4        RoadCategory_E     0.065445
+5        RoadCategory_F     0.060473
+6                 buses    -2.648868
+7                  cars     2.987761
+8           motorcycles    -1.461664
+9                others    -1.009125
+10          region_east     0.154318
+11         region_north    -0.172208
+12         region_south     1.091563
+13          region_west     2.391527
+14                 year    -6.026583
+
+Training Lasso Regression with {'alpha': [0.01, 0.1, 1, 10, 100]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+Lasso Regression ==> Best Params: {'alpha': 0.01}
+Lasso Regression ==> MSE: 3.1504, RMSE: 1.7749, MAE: 1.3837, R2: 0.8547
+
+Lasso Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.011237
+1        RoadCategory_C     0.059436
+2   RoadCategory_Counts     0.009902
+3        RoadCategory_D    -0.012863
+4        RoadCategory_E     0.032303
+5        RoadCategory_F     0.000531
+6                 buses    -1.922196
+7                  cars     0.306660
+8           motorcycles    -1.047841
+9                others    -0.167663
+10          region_east     0.119218
+11         region_north    -0.186712
+12         region_south     1.070126
+13          region_west     2.355144
+14                 year    -3.862196
+
+Training ElasticNet Regression with {'alpha': [0.01, 0.1, 1, 10, 100], 'l1_ratio': [0.1, 0.5, 0.9]}
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+ElasticNet Regression ==> Best Params: {'alpha': 0.01, 'l1_ratio': 0.9}
+ElasticNet Regression ==> MSE: 3.1613, RMSE: 1.7780, MAE: 1.3879, R2: 0.8542
+
+ElasticNet Regression has the following coefficients:
+                Feature  Coefficient
+0        RoadCategory_B     0.016510
+1        RoadCategory_C     0.064046
+2   RoadCategory_Counts     0.009547
+3        RoadCategory_D    -0.010909
+4        RoadCategory_E     0.037227
+5        RoadCategory_F     0.005718
+6                 buses    -1.899520
+7                  cars     0.143429
+8           motorcycles    -1.029332
+9                others    -0.146468
+10          region_east     0.117558
+11         region_north    -0.189217
+12         region_south     1.068383
+13          region_west     2.351933
+14                 year    -3.709971
+
+Results Summary:
+Linear Regression         has best params {}                                     ==> MSE: 3.1076    , RMSE: 1.7628    , MAE: 1.3343    , R2: 0.8566    
+Ridge Regression          has best params {'alpha': 0.1}                         ==> MSE: 3.1083    , RMSE: 1.7630    , MAE: 1.3360    , R2: 0.8566    
+Lasso Regression          has best params {'alpha': 0.01}                        ==> MSE: 3.1504    , RMSE: 1.7749    , MAE: 1.3837    , R2: 0.8547    
+ElasticNet Regression     has best params {'alpha': 0.01, 'l1_ratio': 0.9}       ==> MSE: 3.1613    , RMSE: 1.7780    , MAE: 1.3879    , R2: 0.8542    
